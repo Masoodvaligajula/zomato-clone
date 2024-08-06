@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="./styling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script src="./zomato.js"></script>
+</head>
+
+<body>
+    <div class="main" >
+        <div class="background">
+
+            <div class="i"><i class="ri-menu-2-line" id="menubutton" onclick="showMenu()"></i></div>
+            
+            <div id="menu">
+                
+                <div class="menubar" id="menubar"
+                    style="height: 90vh;width: 80vw;background-color: #ccc;position: absolute; display: flex;flex-direction: column;gap: 20px;padding: 20px;border-radius: 0px 20px 20px 0px;">
+                    <div style="color: reds; font-size:30px; display: flex;justify-content: end;padding: 20px;"><a href="./index.html"> <i class="ri-close-line close-icon"></i></a></div>
+                    <button>
+                        <div >
+                            <a href="./getapp.html">  <i class="ri-smartphone-line"></i> Get the App
+                          </a></div>
+                    </button>
+                    <button>
+                        <div>Investor Relations</div>
+                    </button>
+                <button>
+                    <div>Add Restaurant</div>
+                </button>
+            
+                <button> <a href="./loginpage.html">
+                <div class="Login">Login</div>
+            </a></button>
+            <button><div class="sign up">Sign up</div></button>
+        </div>
+    </div>
+    <nav>
+
+        <div style="margin-top: 20px; display:flex; gap: 25vw;cursor: pointer; margin-right: 100px;">
+
+            <div style="font-size: 14px;">
+              <a href="./getapp.html">  <i class="ri-smartphone-line"></i> Get the App
+            </a></div>
+            <div style="display: flex; font-size: 18px; gap: 4vw; font-weight: 100; cursor: pointer;">
+                <div>Investor Relations</div>
+                <div>Add Restaurant</div>
+                <a href="./loginpage.html">
+                    <div class="Login">Login</div>
+                </a>
+                <div class="sign up">Sign up</div>
+            </div>
+        </div>
+    </nav>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <div class="main-title"><img src="./image copy.png" alt=""></div>
+    </div>
+    <div class="sents">
+        <h2>Discover the best food & drinks in Hyderabad</h2>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <div class="search-bar">
+            <select name="location" id="location" class="location-select">
+                <option value="Hyderabad"><i class="ri-map-pin-fill"></i>Hyderabad</option>
+            </select>
+        </div>
+        <div class="search-input-container">
+            <button class="search-button"><i class="ri-search-line"></i></button>
+            <input type="text" placeholder="Search for restaurant, Cuisine or a dish" class="search-input">
+        </div>
+    </div>
+    </div>
+
+    <div class="page2">
+        <div class="cards">
+            <div class="card">
+                <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    alt="">
+                <div>
+                    <h3>Order Online</h3>
+                    <p>Stay Home and Order to Your Doorstep</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    alt="">
+                <h3>Dining</h3>
+                <p>View the city's favourite dining venues</p>
+            </div>
+            <div class="card">
+                <img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    alt="">
+                <h3>Night Life and Clubs</h3>
+                <p>Explore the city's top nightlife outlets</p>
+            </div>
+        </div>
+        <div style="margin-top: 15vw;">
+            <h1>Collections</h1>
+            <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Hyderabad, based on trends</p>
+        </div>
+
+        <div class="hals-container">
+            <div class="hals">
+                <div class="hov">Newly Opened Places</div>
+                <img src="https://b.zmtcdn.com/data/collections/7771cf3a18e1da2916794d3998260c69_1709812287.png?output-format=webp"
+                    alt="" class="">
+            </div>
+            <div class="hals">
+                <div class="hov">Regional Flavours</div>
+                <img src="https://b.zmtcdn.com/data/collections/4d8bbdfe1fe2b4cfa8aad710676fcb61_1674847218.jpg?output-format=webp"
+                    alt="">
+            </div>
+            <div class="hals">
+                <div class="hov">The Legends of Hyderabad</div>
+                <img src="https://b.zmtcdn.com/data/collections/ce8f94a179d859d01f94c441d67ef5ad_1706256874.png?output-format=webp"
+                    alt="">
+            </div>
+            <div class="hals">
+                <div class="hov">Best Insta Worthy Places</div>
+                <img src="https://b.zmtcdn.com/data/collections/fbd237478a5d3b6ea08de83c30230cdd_1709881768.png?output-format=webp"
+                    alt="">
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>Popular localities in and around Hyderabad</h1>
+            </div>
+            <div class="grid">
+                <div class="g1">Jublee hills <br> <span>403 places </span> </div>
+                <div class="g1">Gachibowli <br> <span> 793 places </span></div>
+                <div class="g1">Banjara Hills <br> <span> 411 places </span></div>
+                <div class="g1">Hitech City <br> <span> 373 places </span></div>
+                <div class="g1">Madhapur <br> <span> 869 places </span></div>
+                <div class="g1"> Kondapur <br> <span> 603 places </span></div>
+                <div class="g1">Kukatpally <br> <span> 1457 places </span></div>
+                <div class="g1"> Begumpet <br> <span> 158 places </span></div>
+                <div class="g1">See more</div>
+            </div>
+        </div>
+        <div class="mobile">
+            <img src="https://b.zmtcdn.com/data/o2_assets/f773629053b24263e69f601925790f301680693809.png" alt="">
+            <div>
+                <h1>Get the Zomato App</h1>
+                <h3>We will send you a link, open it on your phone to download the app</h3>
+                <div>
+                    <div class="radio-buttons">
+                        <input type="radio" id="Email" name="contact" value="Email" onclick="showInput()">
+                        <label for="Email">Email</label>
+                        <input type="radio" id="Phone" name="contact" value="Phone" onclick="showInput()">
+                        <label for="Phone">Phone</label>
+                    </div>
+                    <div id="emailInput">
+                        <input type="email" placeholder="Enter your email" style="width: 100%;">
+                        <button class="button">Send OTP</button>
+
+                    </div>
+                    <div id="phoneInput">
+
+                        <select class="country-code">
+                            <option value="+91">+91</option>
+                            <option value="+1">+1</option>
+                            <option value="+44">+44</option>
+                        </select>
+
+                        <input type="number" placeholder="Enter your phone number">
+                        <button class="button">Send OTP</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
